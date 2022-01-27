@@ -9,6 +9,7 @@ public class Main {
         Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
         Cadena cadena=new Cadena();
         char opc;
+        String caracter;
         System.out.println("Ingrese cadena");
         cadena.setFrase(read.next());
         cadena.setLongitud(cadena.getFrase().length());
@@ -34,7 +35,12 @@ public class Main {
                     break;
                 case '3':
                     System.out.println("Ingrese caracter a buscar");
-                    cadena.vecesRepetido(read.next());
+                    caracter=read.next();
+                    while(caracter.length()>1){
+                        System.out.println("ERROR! ingrese un solo caracter");
+                         caracter=read.next();
+                    }
+                    cadena.vecesRepetido(caracter);
                     break;
                 case '4':
                     System.out.println("Ingrese cadena para comparar longitud");
@@ -46,11 +52,21 @@ public class Main {
                     break;
                 case '6':
                     System.out.println("Ingrese caracter para reemplazar por la a");
-                    cadena.reemplazarCaracter(read.next());
+                     caracter=read.next();
+                    while(caracter.length()>1){
+                        System.out.println("ERROR! ingrese un solo caracter");
+                         caracter=read.next();
+                    }
+                    cadena.reemplazarCaracter(caracter);
                     break;
                 case '7':
                     System.out.println("Ingrese cracater a encontrar");
-                    boolean encontrado=cadena.contieneCaracter(read.next());
+                     caracter=read.next();
+                    while(caracter.length()>1){
+                        System.out.println("ERROR! ingrese un solo caracter");
+                         caracter=read.next();
+                    }
+                    boolean encontrado=cadena.contieneCaracter(caracter);
                     if (encontrado) {
                         System.out.println("El caracter se encuentra en la cadena");
                     }else{
