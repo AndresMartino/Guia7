@@ -21,10 +21,12 @@ public class Principal5 {
             opc = read.nextInt();
             switch (opc) {
                 case 1:
-                    cuenta.ingresar();
+                     System.out.println("Ingrese dinero a la cuenta:");
+                    cuenta.ingresarPlata(read.nextDouble());
                     break;
                 case 2:
-                    cuenta.retirar();
+                    System.out.println("Ingrese dinero a retirar:");
+                    cuenta.retirarPlata(read.nextDouble());
                     break;
                 case 3:
                     cuenta.extraccionRapida();

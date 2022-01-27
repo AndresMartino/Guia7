@@ -53,20 +53,20 @@ public class Cuenta {
         saldoActual=read.nextDouble();
     }
     
-    public void ingresar(){
-        System.out.println("Ingrese dinero a la cuenta:");
-        saldoActual+=read.nextDouble();
+    public void ingresarPlata(double ingresarDinero){
+       
+        saldoActual+=ingresarDinero;
         
     }
     
-    public void retirar(){
-        System.out.println("Ingrese dinero a retirar:");
-        double r=read.nextDouble();
-       if(r>saldoActual){
+    public void retirarPlata(double retirar){
+        
+       
+       if(retirar>saldoActual){
            saldoActual=0;
        
        }else{
-           saldoActual-=r;
+           saldoActual-=retirar;
        
        }
     
