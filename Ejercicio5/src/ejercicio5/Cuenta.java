@@ -76,13 +76,13 @@ public class Cuenta {
         System.out.println("Ingrese dinero a retirar ");
         double ext=read.nextDouble();
         while(ext>saldoActual*0.2){
-            System.out.printf("ERROR saque menos del 20 %% que es %f \n",saldoActual); 
+            System.out.printf("ERROR saque menos del 20 %% que es %.2f \n",saldoActual*0.2); 
             ext=read.nextDouble();
         }
         saldoActual-=ext;
     }
     public void consultarSaldo(){
-        System.out.printf("El saldo actual es %f \n",saldoActual);
+        System.out.printf("El saldo actual es %.2f \n",saldoActual);
     
     }
      public void consultarDatos(){
