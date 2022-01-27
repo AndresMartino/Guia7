@@ -6,14 +6,13 @@ import java.util.Scanner;
 public class Principal4 {
 
     public static void main(String[] args) {
-        Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
-        Rectangulo rec=new Rectangulo();
-        rec.crearRectangulo();
-        rec.superficie();
+        Rectangulo rectangulo=new Rectangulo();
+        rectangulo.crearRectangulo();
+        rectangulo.superficieRectangulo();
         System.out.println();
-        rec.perimetro();
+        rectangulo.perimetroRectangulo();
         System.out.println();
-        rec.dibujar();
+        rectangulo.dibujarRectangulo();
     }
     
 }
