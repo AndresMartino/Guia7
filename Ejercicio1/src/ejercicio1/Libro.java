@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Libro {
-    private int ISBN;
+    private int isbn;
     private String titulo;
     private String autor;
     private int npag;
@@ -12,19 +12,19 @@ public class Libro {
     public Libro(){
     }
      
-    public Libro(int ISBN, String titulo, String autor, int npag){
-        this.ISBN=ISBN;
+    public Libro(int isbn, String titulo, String autor, int npag){
+        this.isbn=isbn;
         this.titulo=titulo;
         this.autor=autor;
         this.npag=npag;
     }
 
-    public int getISBN() {
-        return ISBN;
+    public int getIsbn() {
+        return isbn;
     }
 
-    public void setISBN(int ISBN) {
-        this.ISBN = ISBN;
+    public void setIsbn(int isbn) {
+        this.isbn = isbn;
     }
 
     public String getTitulo() {
@@ -54,7 +54,7 @@ public class Libro {
     public void cargarLibro(){
         Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
         System.out.println("Ingrese codigo ISBN");
-        this.ISBN=read.nextInt();
+        this.isbn=read.nextInt();
         System.out.println("Ingrese titulo del libro");
         this.titulo=read.next();
         System.out.println("Ingrese autor del libro");
@@ -64,7 +64,7 @@ public class Libro {
     }
     
     public void mostrarLibro(){
-        System.out.printf("EL codigo ISBN del libro es: %d \n",ISBN);
+        System.out.printf("EL codigo ISBN del libro es: %d \n",isbn);
         System.out.printf("El titulo del libro es: %s \n",titulo);
          System.out.printf("El autor del libro es: %s \n",autor);
          System.out.printf("EL numero de paginas es  es: %d \n",npag);
