@@ -30,6 +30,7 @@ public class Cafetera {
     
     public void llenarCafetera(){
         cantidadActual=capacidadMaxima;
+        System.out.println("Cafetera LLenada");
     }
      
     public void servirTaza(int tamaño){
@@ -48,12 +49,15 @@ public class Cafetera {
     }
     public void vaciarCafetera(){
         cantidadActual=0;
+        System.out.println("Cafetera vaciada!");
     }
     
     public void agregarCafe(int cafe){
         if ((cafe+cantidadActual)>capacidadMaxima) {
             cantidadActual=capacidadMaxima;
+            System.out.println("sobro "+((cafe+cantidadActual)-capacidadMaxima)+" de cafe" );
         }else{
+            System.out.println("Cafe agregado!");
             cantidadActual+=cafe;
         }
     
