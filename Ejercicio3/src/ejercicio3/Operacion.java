@@ -51,7 +51,7 @@ public class Operacion {
 
     public double multiplicacion() {
         if(n1==0 || n2==0){
-            System.out.println("ERROR! multiplicando por cero");
+            
             return 0;
         }else{
             return (n1*n2);
@@ -59,7 +59,7 @@ public class Operacion {
     }
      public double dividir() {
         if(n1==0 || n2==0){
-            System.out.println("ERROR! dividiendo por cero");
+           
             return 0;
         }else{
             return (n1/n2);
