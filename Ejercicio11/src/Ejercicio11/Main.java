@@ -21,8 +21,8 @@ public class Main {
         System.out.printf("LA fecha de hoy es: %d/%d/%d \n",fechaActual.getYear()+1900,fechaActual.getMonth()+1,fechaActual.getDate());
         
         int diferencia=fechaActual.getYear()+1900-fecha.getYear();
-        if (fechaActual.getMonth()<=fecha.getMonth()+1) {
-            if (fechaActual.getMonth()==fecha.getMonth()+1) {
+        if (fechaActual.getMonth()+1<=fecha.getMonth()) {
+            if (fechaActual.getMonth()+1==fecha.getMonth()) {
                 if (fecha.getDate()>fechaActual.getDate()) {
                     diferencia--;
                 }
