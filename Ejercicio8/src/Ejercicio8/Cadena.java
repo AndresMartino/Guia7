@@ -67,7 +67,7 @@ public class Cadena {
     }
     public void unirFrase(String frase){
         String frasesUnidas;
-        frasesUnidas=this.frase+" "+frase;
+        frasesUnidas=this.frase.concat(frase);
         System.out.printf("\nLas frase unidas quedan: %s\n",frasesUnidas);
     }
     

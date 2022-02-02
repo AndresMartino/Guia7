@@ -13,6 +13,7 @@ public class Main {
         matematica.setNum2(Math.random()*20);
         
         do {
+            System.out.printf("Los numeros aleatorios son [%f] y [%f]\n",matematica.getNum1(),matematica.getNum2());
             System.out.println("-------MENU-------");
             System.out.println("1-Saber cual es el mayor de los aleatorios");
             System.out.println("2-Calcular potencia del mayor elevado el menor");
