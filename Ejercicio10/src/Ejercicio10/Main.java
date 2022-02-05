@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         double[] array1 = new double[50];
-        double[] array2 ;
+        double[] array2 =new double[20];
         //array1
         for (int i = 0; i < array1.length; i++) {
             array1[i] = (double) Math.round(((Math.random() * 20) + 1) * 100) / 100;  //define la cantidad de decimales haciendo un redondeo, capo parra

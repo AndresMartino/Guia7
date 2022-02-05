@@ -9,8 +9,8 @@ public class Main {
         Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
         Matematica matematica=new Matematica();
         int opc;
-        matematica.setNum1(Math.random()*20);
-        matematica.setNum2(Math.random()*20);
+        matematica.setNum1((Math.random()*10));
+        matematica.setNum2((Math.random()*10));
         
         do {
             System.out.printf("Los numeros aleatorios son [%f] y [%f]\n",matematica.getNum1(),matematica.getNum2());

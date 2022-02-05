@@ -93,8 +93,10 @@ public class Ahorcado {
          System.out.println("");
         System.out.println("Ingrese letra a buscar");
         letra=read.next();
+        buscar(letra);
+        //encontradas(letra);
         longitud();
-        encontradas(letra);
+        
         intentos();
        }while(this.cantLetrasEncontradas!=this.palabra.length && this.cantJugadas!=0);
         if (this.cantLetrasEncontradas==this.palabra.length || this.cantJugadas==0) {
