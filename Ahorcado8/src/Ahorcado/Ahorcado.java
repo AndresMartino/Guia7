@@ -200,7 +200,7 @@ public class Ahorcado {
                     System.out.println(" | ");
                     System.out.println(" |");
                     System.out.println(" |");
-                    System.out.println("l");
+                    System.out.println("/");
                     break;
                 case 1:
                     System.out.println(" |");
@@ -218,7 +218,7 @@ public class Ahorcado {
                     System.out.println(" | ");
                     System.out.println(" |");
                     System.out.println(" |");
-                    System.out.println("l-l");
+                    System.out.println("/ \\");
                     break;
             }
         } else if (this.jugadas == 6) {
@@ -259,7 +259,7 @@ public class Ahorcado {
                     System.out.println(" O ");
                     System.out.println("<|>");
                     System.out.println(" | ");
-                    System.out.println("1-1");
+                    System.out.println("/ \\");
                     break;
             }
         } else {
@@ -281,7 +281,7 @@ public class Ahorcado {
                     System.out.println(" |");
                     System.out.println(" O");
                     System.out.println("<|>");
-                    System.out.println("l-l");
+                    System.out.println("/ \\");
 
                     break;
             }
@@ -307,7 +307,7 @@ public class Ahorcado {
             crearPersona();
         } while (this.cantJugadas != 0 && this.cantEncontradas != this.palabra.length);
         if (this.cantEncontradas == this.palabra.length) {
-            System.out.println("Palabra encontrad");
+            System.out.println("Palabra encontrada :D");
             mostrarAhorcado();
         } else {
             System.out.println("palabra no encontrada :( ");
