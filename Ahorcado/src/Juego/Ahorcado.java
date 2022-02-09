@@ -99,7 +99,7 @@ public class Ahorcado {
 
     public void intentos() {
         System.out.println(" ------------------------");
-        System.out.println(" Intentos disponibles: " + this.cantJugadas+"|");
+        System.out.println(" Intentos disponibles: " + this.cantJugadas);
     
     }
 
@@ -110,7 +110,7 @@ public class Ahorcado {
            
             System.out.print(this.palabraAux[i] + " ");
         }
-     
+        System.out.println("");
     }
 
     public void juego() {
@@ -127,7 +127,7 @@ public class Ahorcado {
             intentos();
             System.out.printf("\n\n");
         } while (this.encontradas != this.palabra.length && this.cantJugadas != 0);
-        if (this.encontradas != this.palabra.length && this.cantJugadas != 0) {
+        if (this.encontradas == this.palabra.length || this.cantJugadas != 0) {
             System.out.println("Palabra encontrada!");
             mostrarAhorcado();
         }
